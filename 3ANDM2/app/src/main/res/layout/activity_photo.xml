@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/button_background"
+    tools:context=".PhotoActivity">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@color/titre"
+        android:src="@drawable/ic_baseline_camera_enhance_24" />
+
+    <Button
+        android:id="@+id/capture_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:text="Take a picture"
+        app:backgroundTint="#3127BF" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:background="@color/textbox"
+        android:gravity="center_horizontal"
+        android:inputType="text"
+        android:hint="Name your Photo"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="PickImageFromGallery"
+        android:onClick="gotoSave"
+        android:text="Save"
+        android:textColorHighlight="#884D4D"
+        app:backgroundTint="#0D0A61"
+        style="@style/Base.Widget.AppCompat.Button.Colored"/>
+
+</LinearLayout>

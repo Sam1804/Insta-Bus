@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">3ANDM</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="open_the_map">Open the Map</string>
+</resources>
